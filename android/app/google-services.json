@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "476127657972",
+    "project_id": "daily-health-tracker-8af35",
+    "storage_bucket": "daily-health-tracker-8af35.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476127657972:android:6ceefdbc186ec0382203a1",
+        "android_client_info": {
+          "package_name": "com.antigravity.daily_health_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHijM8BcCJu_jks6SBCdaJ2bOsFZm-qTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
