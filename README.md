@@ -15,16 +15,24 @@
 
 ---
 
-## 🎥 App Demo (Auto Play)
+## 📦 Download APK
 
-<p align="center">
-  <video src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" controls autoplay loop muted width="700"></video>
-</p>
+👉 **Direct APK Link:**  
+https://drive.google.com/file/d/1sOQLuAPOfT9qf-7UBk-gPYDmpDLZAmFY/view?usp=drivesdk
 
-> 📌 Upload your `daily-health-tracker.mp4` to Google Drive  
-> → Make it "Anyone with link can view"  
-> → Copy File ID  
-> → Replace `YOUR_FILE_ID` above  
+> Make sure the Drive file access is set to **“Anyone with the link can view”**
+
+---
+
+## 🎥 App Demo
+
+> Demo video is included inside the repository.
+
+If embedding video:
+
+```html
+<video src="https://drive.google.com/file/d/1QmZbGSef_dvRc3hHPKopS6mnybp3AX9Z/view?usp=drivesdk" controls width="700"></video>
+```
 
 ---
 
@@ -43,7 +51,7 @@
 ## 🔐 Authentication
 - Google Sign-In using `google_sign_in`
 - Firebase Authentication
-- Mock fallback for demo environments
+- Mock fallback for development/demo
 
 ---
 
@@ -63,57 +71,53 @@
 - REST API Integration (`JSONPlaceholder`)
 - Infinite Scroll (Lazy Loading)
 - Pull-to-Refresh
-- Loading shimmer effect
+- Smooth staggered animations
 
 ---
 
-# 🎨 Premium UI / UX Design
+# 🎨 Premium UI / UX
 
 - 🌙 Elegant Dark Mode (Slate & Indigo theme)
-- 🪄 Smooth Fade, Scale & Slide animations
+- 🪄 Fade, Scale & Slide animations
 - 🧩 Staggered list animations (`flutter_staggered_animations`)
-- 📱 Responsive Layout for all screen sizes
-- 🎯 Clean spacing & consistent typography (`google_fonts`)
+- 📱 Fully responsive layout
+- 🎯 Clean spacing & modern typography (`google_fonts`)
 
 ---
 
 # 🏗️ Architecture
 
-The app follows **MVC (Model-View-Controller)** combined with **GetX**.
+The app follows **MVC (Model-View-Controller)** combined with **GetX**:
 
-### 🔹 State Management
-Reactive UI using `.obs` and `Obx`
-
-### 🔹 Dependency Injection
-Controllers & Services decoupled
-
-### 🔹 Routing
-Named routes using GetX
+- Reactive state management using `.obs` and `Obx`
+- Dependency Injection with GetX
+- Named routing system
+- Clean separation of concerns
 
 ---
 
 # 📁 Project Structure
 
-
+```
 lib/
-├── controllers/ # Business logic & state
-├── models/ # Data models
-├── routes/ # Navigation config
-├── services/ # API & Auth services
-├── utils/ # Theme & Constants
-├── views/ # Screens
-├── widgets/ # Reusable components
-└── main.dart
-
+├── controllers/    # Business logic & state
+├── models/         # Data models
+├── routes/         # Navigation config
+├── services/       # API & Auth services
+├── utils/          # Theme & Constants
+├── views/          # UI screens
+├── widgets/        # Reusable components
+└── main.dart       # App entry point
+```
 
 ---
 
 # 🚀 Getting Started
 
 ## Prerequisites
-- Flutter SDK (latest)
+- Flutter SDK (latest recommended)
 - Android Studio / VS Code
-- Firebase Project (for Google Sign-In)
+- Firebase Project (for real Google Sign-In)
 
 ---
 
@@ -122,85 +126,65 @@ lib/
 1️⃣ Clone repository
 
 ```bash
-git clone https://github.com/yourusername/daily-health-tracker.git
+git clone https://github.com/tarunmehrda/daily-health-tracker
+```
 
 2️⃣ Install dependencies
 
+```bash
 flutter pub get
+```
 
 3️⃣ Google Sign-In Setup
 
-Add google-services.json to:
-
+- Add `google-services.json` to:
+```
 android/app/
+```
 
-Add SHA-1 in Firebase
+- Add SHA-1 in Firebase
+- Enable Google provider in Firebase Authentication
 
-Enable Google provider in Firebase Authentication
-
-⚠ If not configured, app automatically logs in using Mock User.
+> ⚠ If not configured, app logs in using Mock User.
 
 4️⃣ Run app
 
+```bash
 flutter run
-📦 Dependencies
-Package	Purpose
-get	State management & routing
-google_sign_in	Google authentication
-firebase_auth	Firebase authentication
-fl_chart	Data visualization
-http	REST API calls
-flutter_staggered_animations	Smooth list animations
-google_fonts	Premium typography
-intl	Date formatting
-🧠 Evaluation Coverage
+```
 
-✔ Google Authentication
-✔ MVC + GetX
-✔ REST API Integration
-✔ Lazy Loading
-✔ Countdown Timer
-✔ Animations
-✔ Dark Mode
-✔ Clean UI
-✔ README Documentation
+---
 
-👨‍💻 Developed By
+# 📦 Dependencies
 
-Tarun Kumar Meharda
+| Package | Purpose |
+|----------|----------|
+| get | State management & routing |
+| google_sign_in | Google authentication |
+| firebase_auth | Firebase authentication |
+| fl_chart | Data visualization |
+| http | REST API calls |
+| flutter_staggered_animations | Smooth animations |
+| google_fonts | Typography |
+| intl | Date formatting |
+
+---
+
+# 🧠 Evaluation Coverage
+
+✔ Google Authentication  
+✔ MVC + GetX  
+✔ REST API Integration  
+✔ Lazy Loading  
+✔ Countdown Timer  
+✔ Animations  
+✔ Dark Mode  
+✔ Clean UI  
+✔ Professional README  
+
+---
+
+# 👨‍💻 Developed By
+
+**Tarun Kumar Meharda**  
 Flutter Developer | AI/ML Engineer
-
-
----
-
-# 🔥 Why This README Is Strong
-
-- Clean
-- Professional
-- Premium UI
-- Recruiter-friendly
-- Shows architecture maturity
-- Shows animation understanding
-- Clear setup instructions
-- Modern formatting
-
----
-
-# ⚠️ Important Note About Video
-
-GitHub does NOT truly support autoplay video directly.
-
-Best professional solution:
-
-Upload video directly in README using drag & drop in GitHub editor.  
-GitHub will host it like this:
-
-
-https://github.com/user-attachments/assets/
-....
-
-
-Then embed:
-
-```markdown
-<video src="VIDEO_LINK" controls width="700"></video>
