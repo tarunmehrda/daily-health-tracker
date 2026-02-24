@@ -28,9 +28,7 @@ https://drive.google.com/file/d/1sOQLuAPOfT9qf-7UBk-gPYDmpDLZAmFY/view?usp=drive
 
 > Demo video is included inside the repository.
 
-If embedding video:
-<video src="https://drive.google.com/uc?export=download&id=1QmZbGSef_dvRc3hHPKopS6mnybp3AX9Z" controls width="700"></video>
----
+https://drive.google.com/file/d/1QmZbGSef_dvRc3hHPKopS6mnybp3AX9Z/view?usp=drivesdk
 
 ## 📱 UI Preview
 
